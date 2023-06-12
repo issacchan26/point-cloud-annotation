@@ -39,7 +39,7 @@ To convert the meshes, please create the directories as following:
 If there are too many vertices in the input meshes, you may use [mesh_reduce.py](./mesh_reduce.py) to reduce the vertices into 10000 vertices
 
 ## Annotation post-processing for machine learning
-To convert the annotation txt file, please create the directories as following:
+To convert the annotation txt file, please create the directories as below and run [annotation_output.py](./annotation_output.py):
 
 ```bash
 ├── input_obj
@@ -54,7 +54,7 @@ To convert the annotation txt file, please create the directories as following:
 ├── apply_color_to_ply.py
 └── annotation_output.py
 ```
-Run [annotation_output.py](./annotation_output.py) \
+
 The .ply with RGB color files are stored in "ply_with_color" folder \
 It will be saved in ascii format with following properties:
 ```bash
