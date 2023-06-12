@@ -9,9 +9,11 @@ It support .pcd file as input and output .txt file as annotation.
 ## Configuration of Semantic Segmentation Editor
 1. Follow the [original page](https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor.git) to install the Semantic Segmentation Editor
 2. Access to semantic-segmentation-editor-master
-3. Put all the input .pcd files in "img_folder"
-4. Replace the original settings.json with our [settings.json](./settings.json)
-5. You are ready to annotate the point cloud
+3. Replace the original settings.json with our [settings.json](./settings.json)
+4. Create the folders "img_folder" and "pc_folder"
+5. In [settings.json](./settings.json), change the path of "images-folder" and "internal-folder" to the path of img_folder and pc_foler respectively 
+6. Put all the input .pcd files in "img_folder"
+7. You are ready to annotate the point cloud
 
 ## Getting Started with our post-processing algorithm
 Use the pip to install dependencies, you may use conda instead
