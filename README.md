@@ -67,8 +67,8 @@ It will be saved as x y z label format:
 x y z label
 ```
 ## .ply file with RGB value
-The result ply will be look like this:
-![alt text](./body_segmentation.png)
+The result ply will be look like this: \
+![alt text](./body_segmentation.png) \
 You may add/remove body parts and change the color in [settings.json](./settings.json)
 
 ## Invisible spaces in .ply file
