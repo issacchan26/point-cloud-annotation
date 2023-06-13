@@ -56,7 +56,7 @@ meteor npm start
 
 ## Annotation post-processing for machine learning
 Our algorithm currently support .obj mesh files. For .pcd data, please convert .pcd into .obj first \
-To convert the annotation txt file for simplified .txt and .ply with RGB, please create the directories as below:
+To convert the annotation txt file into simplified data structure, please create the directories as below:
 
 ```bash
 ├── input_obj
