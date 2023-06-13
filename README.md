@@ -13,7 +13,12 @@ It support .pcd file as input and output .txt file as annotation.
 4. Create the folders "img_folder" and "pc_folder"
 5. In [settings.json](./settings.json), change the path of "images-folder" and "internal-folder" to the path of img_folder and pc_foler respectively 
 6. Put all the input .pcd files in "img_folder"
-7. You are ready to annotate the point cloud
+7. Start the application by:
+```bash
+cd semantic-segmentation-editor-x.x.x
+meteor npm start
+```
+8. You are ready to annotate the point cloud, for detail tutorial of using Semantic Segmentation Editor, please refer to [original page](https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor.git)
 
 ## Getting Started with our post-processing algorithm
 Use the pip to install dependencies, you may use conda instead
