@@ -1,5 +1,5 @@
 # Point Cloud Annotation for machine learning
-This repo provides the PCD annotation guideline of 3D human models \
+This repo provides the PCD annotation guideline of 3D human meshes in .obj format \
 It includes the processing algorithm of annotation files for machine learning
 
 ## Getting Started with our processing algorithm
@@ -55,7 +55,7 @@ meteor npm start
 8. You are ready to annotate the point cloud, for detail tutorial of using Semantic Segmentation Editor, please refer to [original page](https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor.git)
 
 ## Annotation post-processing for machine learning
-Our algorithm currently support .obj mesh files. For .pcd data, please convert .pcd into .obj first \
+Our algorithm currently support .obj mesh files. \
 To convert the annotation txt file into simplified data structure, please create the directories as below:
 
 ```bash
