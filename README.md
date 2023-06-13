@@ -21,11 +21,20 @@ To convert the meshes, please create the directories as following:
 │   ├── 1_139.obj
 │   ├── 1_141.obj
 ├── output_pcd
-└── obj_to_pcd.py.py
+└── obj_to_pcd.py
 ```
 
 ## Mesh simplification
-If there are too many vertices in the input meshes, you may use [mesh_reduce.py](./mesh_reduce.py) to reduce the vertices into 10000 vertices
+If there are too many vertices in the input meshes, you may use [mesh_reduce.py](./mesh_reduce.py) to reduce the vertices into 10000 vertices \
+Please create the directories as following:
+
+```bash
+├── mesh_data
+│   ├── 1_139.obj
+│   ├── 1_141.obj
+├── output_mesh
+└── mesh_reduce.py
+```
 
 ## Annotation tool
 This repo is using [Semantic Segmentation Editor](https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor.git) as labeling tool. \
@@ -46,7 +55,8 @@ meteor npm start
 8. You are ready to annotate the point cloud, for detail tutorial of using Semantic Segmentation Editor, please refer to [original page](https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor.git)
 
 ## Annotation post-processing for machine learning
-To convert the annotation txt file, please create the directories as below and run [annotation_output.py](./annotation_output.py):
+Our algorithm currently support .obj mesh files. For .pcd data, please convert .pcd into .obj first \
+To convert the annotation txt file for simplified .txt and .ply with RGB, please create the directories as below:
 
 ```bash
 ├── input_obj
@@ -61,6 +71,8 @@ To convert the annotation txt file, please create the directories as below and r
 ├── apply_color_to_ply.py
 └── annotation_output.py
 ```
+
+Put all the annotated .txt files into "input_annotated_txt" and .obj files into "input_obj". Then run [annotation_output.py](./annotation_output.py)
 
 The .ply with RGB color files are stored in "ply_with_color" folder \
 It will be saved in ascii format with following properties:
